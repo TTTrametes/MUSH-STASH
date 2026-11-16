@@ -1,63 +1,233 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mush-Stash Apothecary</title>
-  <meta name="description" content="Mush-Stash Apothecary. Mushrooms by the gram.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Jost:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap">
-  <style>
-    body { margin:0; background:#F0E5CF; }
-    html { scroll-behavior:smooth; }
-    a { color:inherit; }
-    a:hover { opacity:.78; }
-    a:focus-visible { outline:2px solid #9C4421; outline-offset:3px; }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mush-Stash Apothecary</title>
+<meta name="description" content="Mush-Stash Apothecary. Mushrooms by the gram.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Jost:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap">
+<style>
+body{margin:0;background:#F0E5CF}
+html{scroll-behavior:smooth}
+a{color:inherit}
+a:hover{opacity:.78}
+a:focus-visible{outline:2px solid #9C4421;outline-offset:3px}
+</style>
 </head>
 <body>
-  <div style="background: #F0E5CF; color: #25160D; font-family: 'Jost', system-ui, sans-serif; min-height: 100vh; display: flex; flex-direction: column">
+<div style="background: #F0E5CF; color: #25160D; font-family: 'Jost', system-ui, sans-serif; min-height: 100%; display: flex; flex-direction: column">
 
-    <!-- Top bar -->
-    <header style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 24px; padding: 20px clamp(20px, 5vw, 56px)">
-      <span style="font-size: 13px; font-weight: 500; letter-spacing: 0.3em; text-transform: uppercase">Mush-Stash</span>
-      <nav style="display: flex; flex-wrap: wrap; gap: 8px 28px">
-        <a href="#stash" style="display: inline-block; padding: 12px 0; font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase; text-decoration: none">The stash</a>
-        <a href="#order" style="display: inline-block; padding: 12px 0; font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase; text-decoration: none">How to order</a>
-      </nav>
-    </header>
+<!-- Top bar -->
+<header style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 24px; padding: 20px clamp(20px, 5vw, 56px)">
+<span style="font-size: 13px; font-weight: 500; letter-spacing: 0.3em; text-transform: uppercase">Mush-Stash</span>
+<nav style="display: flex; flex-wrap: wrap; gap: 8px 28px">
+<a href="#stash" style="display: inline-block; padding: 12px 0; font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase; text-decoration: none">The stash</a>
+<a href="#order" style="display: inline-block; padding: 12px 0; font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase; text-decoration: none">How to order</a>
+</nav>
+</header>
 
-    <!-- Hero -->
-    <section style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 20px; padding: 24px clamp(20px, 5vw, 56px) 112px">
-      <img src="emblem.jpg" alt="A pair of turkey tail mushrooms arranged as a curled moustache" style="width: min(600px, 88%); height: auto; display: block; -webkit-mask-image: radial-gradient(ellipse 50% 50% at 50% 50%, #000 86%, transparent 100%); mask-image: radial-gradient(ellipse 50% 50% at 50% 50%, #000 86%, transparent 100%)">
-      <div style="display: flex; flex-direction: column; align-items: center; gap: 6px">
-        <h1 style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-weight: 500; font-size: clamp(56px, 11vw, 132px); line-height: 1; letter-spacing: -0.015em">Mush-Stash</h1>
-        <p style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-weight: 400; font-size: clamp(20px, 2.6vw, 32px); letter-spacing: 0.08em">Apothecary</p>
-      </div>
-      <p style="margin: 12px 0 0; max-width: 34ch; font-size: 21px; font-weight: 300; line-height: 1.5; color: #6A5240; text-wrap: balance">Mushrooms by the gram. No middleman, no permission slip.</p>
-      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin-top: 16px">
-        <a href="#stash" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 30px; box-sizing: border-box; background: #25160D; color: #F0E5CF; font-size: 13px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; text-decoration: none">See the stash</a>
-      </div>
-    </section>
+<!-- Hero -->
+<section style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 20px; padding: 24px clamp(20px, 5vw, 56px) 112px">
+<img src="emblem.jpg" alt="A pair of turkey tail mushrooms arranged as a curled moustache" style="width: min(600px, 88%); height: auto; display: block; -webkit-mask-image: radial-gradient(ellipse 50% 50% at 50% 50%, #000 86%, transparent 100%); mask-image: radial-gradient(ellipse 50% 50% at 50% 50%, #000 86%, transparent 100%)">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 6px">
+<h1 style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-weight: 500; font-size: clamp(56px, 11vw, 132px); line-height: 1; letter-spacing: -0.015em">Mush-Stash</h1>
+<p style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-weight: 400; font-size: clamp(20px, 2.6vw, 32px); letter-spacing: 0.08em">Apothecary</p>
+</div>
+<p style="margin: 12px 0 0; max-width: 34ch; font-size: 21px; font-weight: 300; line-height: 1.5; color: #6A5240; text-wrap: balance">Mushrooms by the gram. No middleman, no permission slip.</p>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin-top: 16px">
+<a href="#stash" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 30px; box-sizing: border-box; background: #25160D; color: #F0E5CF; font-size: 13px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; text-decoration: none">See the stash</a>
+</div>
+</section>
 
-    <!-- The stash -->
-    <section id="stash" style="padding: 40px clamp(20px, 5vw, 56px) 112px">
-      <div style="max-width: 1248px; margin: 0 auto; display: flex; flex-direction: column; gap: 48px">
-        <div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 12px 32px">
-          <h2 style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-weight: 500; font-size: clamp(38px, 5vw, 60px); line-height: 1.05">The stash</h2>
-          <span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #9C4421">Rand &middot; weighed to the gram</span>
-        </div>
+<!-- The stash -->
+<section id="stash" style="padding: 40px clamp(20px, 5vw, 56px) 112px">
+<div style="max-width: 1248px; margin: 0 auto; display: flex; flex-direction: column; gap: 48px">
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 12px 32px">
+<h2 style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-weight: 500; font-size: clamp(38px, 5vw, 60px); line-height: 1.05">The stash</h2>
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #9C4421">Rand · weighed to the gram</span>
+</div>
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 48px 24px">
-          
-          <!-- Product 1 -->
-          <article style="display: flex; flex-direction: column; gap: 18px; min-width: 0">
-            <div style="aspect-ratio: 4 / 3; max-width: 100%; box-sizing: border-box; border-radius: 2px; background: repeating-radial-gradient(circle at 28% 125%, #E9DDC5 0 16px, #D6C3A0 16px 32px); display: flex; align-items: flex-end; padding: 14px">
-              <span style="background: #F0E5CF; color: #25160D; padding: 6px 10px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Stock Available</span>
-            </div>
-            <div style="display: flex; flex-direction: column; gap: 2px">
-              <h3 style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-weight: 500; font-size: 26px">Rusty White</h3>
-              <p style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 16px; color: #9C4421">Hericium erinaceus</p>
-            </div>
-            <div style="display: flex
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr)); gap: 48px 24px">
+
+<article style="display: flex; flex-direction: column; gap: 18px; min-width: 0">
+<div style="aspect-ratio: 4 / 3; max-width: 100%; box-sizing: border-box; border-radius: 2px; background: repeating-radial-gradient(circle at 28% 125%, #E9DDC5 0 16px, #D6C3A0 16px 32px); display: flex; align-items: flex-end; padding: 14px">
+<span style="background: #F0E5CF; color: #25160D; padding: 6px 10px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Photo goes here</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 2px">
+<h3 style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-weight: 500; font-size: 26px">Lion's Mane</h3>
+<p style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 16px; color: #9C4421">Hericium erinaceus</p>
+</div>
+<div style="display: flex; flex-direction: column; font-family: 'IBM Plex Mono', monospace; font-size: 15px">
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid rgba(37, 22, 13, 0.22)"><span>2 g</span><span>R 180</span></div>
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid rgba(37, 22, 13, 0.22)"><span>5 g</span><span>R 450</span></div>
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid rgba(37, 22, 13, 0.22)"><span>10 g</span><span>R 800</span></div>
+</div>
+</article>
+
+<article style="display: flex; flex-direction: column; gap: 18px; min-width: 0">
+<div style="aspect-ratio: 4 / 3; max-width: 100%; box-sizing: border-box; border-radius: 2px; background: repeating-radial-gradient(circle at 70% 125%, #7A3524 0 14px, #4F1F14 14px 28px); display: flex; align-items: flex-end; padding: 14px">
+<span style="background: #F0E5CF; color: #25160D; padding: 6px 10px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Photo goes here</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 2px">
+<h3 style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-weight: 500; font-size: 26px">Reishi</h3>
+<p style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 16px; color: #9C4421">Ganoderma lucidum</p>
+</div>
+<div style="display: flex; flex-direction: column; font-family: 'IBM Plex Mono', monospace; font-size: 15px">
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid rgba(37, 22, 13, 0.22)"><span>2 g</span><span>R 180</span></div>
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid rgba(37, 22, 13, 0.22)"><span>5 g</span><span>R 450</span></div>
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid rgba(37, 22, 13, 0.22)"><span>10 g</span><span>R 800</span></div>
+</div>
+</article>
+
+<article style="display: flex; flex-direction: column; gap: 18px; min-width: 0">
+<div style="aspect-ratio: 4 / 3; max-width: 100%; box-sizing: border-box; border-radius: 2px; background: repeating-radial-gradient(circle at 40% 125%, #E3B98F 0 10px, #B5532A 10px 20px, #5A2E1B 20px 26px, #E3B98F 26px 36px); display: flex; align-items: flex-end; padding: 14px">
+<span style="background: #F0E5CF; color: #25160D; padding: 6px 10px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Photo goes here</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 2px">
+<h3 style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-weight: 500; font-size: 26px">Turkey Tail</h3>
+<p style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 16px; color: #9C4421">Trametes versicolor</p>
+</div>
+<div style="display: flex; flex-direction: column; font-family: 'IBM Plex Mono', monospace; font-size: 15px">
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid rgba(37, 22, 13, 0.22)"><span>2 g</span><span>R 180</span></div>
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid rgba(37, 22, 13, 0.22)"><span>5 g</span><span>R 450</span></div>
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid rgba(37, 22, 13, 0.22)"><span>10 g</span><span>R 800</span></div>
+</div>
+</article>
+
+<article style="display: flex; flex-direction: column; gap: 18px; min-width: 0">
+<div style="aspect-ratio: 4 / 3; max-width: 100%; box-sizing: border-box; border-radius: 2px; background: repeating-radial-gradient(circle at 60% 125%, #E8B36A 0 15px, #C8782E 15px 30px); display: flex; align-items: flex-end; padding: 14px">
+<span style="background: #F0E5CF; color: #25160D; padding: 6px 10px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Photo goes here</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 2px">
+<h3 style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-weight: 500; font-size: 26px">Cordyceps</h3>
+<p style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 16px; color: #9C4421">Cordyceps militaris</p>
+</div>
+<div style="display: flex; flex-direction: column; font-family: 'IBM Plex Mono', monospace; font-size: 15px">
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid rgba(37, 22, 13, 0.22)"><span>2 g</span><span>R 180</span></div>
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid rgba(37, 22, 13, 0.22)"><span>5 g</span><span>R 450</span></div>
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid rgba(37, 22, 13, 0.22)"><span>10 g</span><span>R 800</span></div>
+</div>
+</article>
+
+<article style="display: flex; flex-direction: column; gap: 18px; min-width: 0">
+<div style="aspect-ratio: 4 / 3; max-width: 100%; box-sizing: border-box; border-radius: 2px; background: repeating-radial-gradient(circle at 35% 125%, #4A3A30 0 12px, #2A1F1A 12px 24px); display: flex; align-items: flex-end; padding: 14px">
+<span style="background: #F0E5CF; color: #25160D; padding: 6px 10px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Photo goes here</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 2px">
+<h3 style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-weight: 500; font-size: 26px">Chaga</h3>
+<p style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 16px; color: #9C4421">Inonotus obliquus</p>
+</div>
+<div style="display: flex; flex-direction: column; font-family: 'IBM Plex Mono', monospace; font-size: 15px">
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid rgba(37, 22, 13, 0.22)"><span>2 g</span><span>R 180</span></div>
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid rgba(37, 22, 13, 0.22)"><span>5 g</span><span>R 450</span></div>
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid rgba(37, 22, 13, 0.22)"><span>10 g</span><span>R 800</span></div>
+</div>
+</article>
+
+<article style="display: flex; flex-direction: column; gap: 18px; min-width: 0">
+<div style="aspect-ratio: 4 / 3; max-width: 100%; box-sizing: border-box; border-radius: 2px; background: repeating-radial-gradient(circle at 75% 125%, #A07850 0 13px, #6B4A30 13px 26px); display: flex; align-items: flex-end; padding: 14px">
+<span style="background: #F0E5CF; color: #25160D; padding: 6px 10px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Photo goes here</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 2px">
+<h3 style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-weight: 500; font-size: 26px">Shiitake</h3>
+<p style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 16px; color: #9C4421">Lentinula edodes</p>
+</div>
+<div style="display: flex; flex-direction: column; font-family: 'IBM Plex Mono', monospace; font-size: 15px">
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid rgba(37, 22, 13, 0.22)"><span>2 g</span><span>R 180</span></div>
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid rgba(37, 22, 13, 0.22)"><span>5 g</span><span>R 450</span></div>
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid rgba(37, 22, 13, 0.22)"><span>10 g</span><span>R 800</span></div>
+</div>
+</article>
+
+<article style="display: flex; flex-direction: column; gap: 18px; min-width: 0">
+<div style="aspect-ratio: 4 / 3; max-width: 100%; box-sizing: border-box; border-radius: 2px; background: repeating-radial-gradient(circle at 30% 125%, #C9A97C 0 12px, #8B6B4A 12px 24px); display: flex; align-items: flex-end; padding: 14px">
+<span style="background: #F0E5CF; color: #25160D; padding: 6px 10px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Photo goes here</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 2px">
+<h3 style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-weight: 500; font-size: 26px">Maitake</h3>
+<p style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 16px; color: #9C4421">Grifola frondosa</p>
+</div>
+<div style="display: flex; flex-direction: column; font-family: 'IBM Plex Mono', monospace; font-size: 15px">
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid rgba(37, 22, 13, 0.22)"><span>2 g</span><span>R 180</span></div>
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid rgba(37, 22, 13, 0.22)"><span>5 g</span><span>R 450</span></div>
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid rgba(37, 22, 13, 0.22)"><span>10 g</span><span>R 800</span></div>
+</div>
+</article>
+
+<article style="display: flex; flex-direction: column; gap: 18px; min-width: 0">
+<div style="aspect-ratio: 4 / 3; max-width: 100%; box-sizing: border-box; border-radius: 2px; background: repeating-radial-gradient(circle at 65% 125%, #CFC8BC 0 14px, #A89F92 14px 28px); display: flex; align-items: flex-end; padding: 14px">
+<span style="background: #F0E5CF; color: #25160D; padding: 6px 10px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Photo goes here</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 2px">
+<h3 style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-weight: 500; font-size: 26px">Oyster</h3>
+<p style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 16px; color: #9C4421">Pleurotus ostreatus</p>
+</div>
+<div style="display: flex; flex-direction: column; font-family: 'IBM Plex Mono', monospace; font-size: 15px">
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid rgba(37, 22, 13, 0.22)"><span>2 g</span><span>R 180</span></div>
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid rgba(37, 22, 13, 0.22)"><span>5 g</span><span>R 450</span></div>
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid rgba(37, 22, 13, 0.22)"><span>10 g</span><span>R 800</span></div>
+</div>
+</article>
+
+<article style="display: flex; flex-direction: column; gap: 18px; min-width: 0">
+<div style="aspect-ratio: 4 / 3; max-width: 100%; box-sizing: border-box; border-radius: 2px; background: repeating-radial-gradient(circle at 45% 125%, #F4EEE4 0 11px, #E3D6C0 11px 22px); display: flex; align-items: flex-end; padding: 14px">
+<span style="background: #F0E5CF; color: #25160D; padding: 6px 10px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Photo goes here</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 2px">
+<h3 style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-weight: 500; font-size: 26px">Tremella</h3>
+<p style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 16px; color: #9C4421">Tremella fuciformis</p>
+</div>
+<div style="display: flex; flex-direction: column; font-family: 'IBM Plex Mono', monospace; font-size: 15px">
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid rgba(37, 22, 13, 0.22)"><span>2 g</span><span>R 180</span></div>
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid rgba(37, 22, 13, 0.22)"><span>5 g</span><span>R 450</span></div>
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid rgba(37, 22, 13, 0.22)"><span>10 g</span><span>R 800</span></div>
+</div>
+</article>
+
+<article style="display: flex; flex-direction: column; gap: 18px; min-width: 0">
+<div style="aspect-ratio: 4 / 3; max-width: 100%; box-sizing: border-box; border-radius: 2px; background: repeating-radial-gradient(circle at 55% 125%, #B07A45 0 13px, #7A4A24 13px 26px); display: flex; align-items: flex-end; padding: 14px">
+<span style="background: #F0E5CF; color: #25160D; padding: 6px 10px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase">Photo goes here</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 2px">
+<h3 style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-weight: 500; font-size: 26px">Porcini</h3>
+<p style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 16px; color: #9C4421">Boletus edulis</p>
+</div>
+<div style="display: flex; flex-direction: column; font-family: 'IBM Plex Mono', monospace; font-size: 15px">
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid rgba(37, 22, 13, 0.22)"><span>2 g</span><span>R 180</span></div>
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid rgba(37, 22, 13, 0.22)"><span>5 g</span><span>R 450</span></div>
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid rgba(37, 22, 13, 0.22)"><span>10 g</span><span>R 800</span></div>
+</div>
+</article>
+
+</div>
+</div>
+</section>
+
+<!-- Order -->
+<section id="order" style="color: #25160D; padding: 104px clamp(20px, 5vw, 56px)">
+<div style="max-width: 1248px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 48px 80px; align-items: flex-start">
+<div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #9C4421">How to order</span>
+<h2 style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-weight: 500; font-size: clamp(42px, 6vw, 76px); line-height: 1.02">Skip the system.</h2>
+<p style="margin: 0; max-width: 36ch; font-size: 20px; font-weight: 300; line-height: 1.55; color: #6A5240">Message us what you want and how many grams. We confirm, weigh it out and get it to you.</p>
+<a href="https://wa.me/27760629882" style="align-self: flex-start; display: inline-flex; align-items: center; min-height: 48px; padding: 0 30px; box-sizing: border-box; background: #25160D; color: #F0E5CF; font-size: 13px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; text-decoration: none">Order on WhatsApp</a>
+</div>
+<div style="flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; font-family: 'IBM Plex Mono', monospace; font-size: 15px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 24px; padding: 18px 0; border-top: 1px solid rgba(37, 22, 13, 0.22); border-bottom: 1px solid rgba(37, 22, 13, 0.22)"><span style="color: #6A5240; letter-spacing: 0.14em; text-transform: uppercase; font-size: 12px">WhatsApp</span><a href="https://wa.me/27760629882" style="text-decoration: none">+27 76 062 9882</a></div>
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer style="color: #6A5240; padding: 0 clamp(20px, 5vw, 56px) 40px">
+<div style="max-width: 1248px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 32px; padding-top: 28px; border-top: 1px solid rgba(37, 22, 13, 0.22); font-size: 13px; letter-spacing: 0.1em">
+<span style="text-transform: uppercase">Mush-Stash Apothecary · Good to gangsta · Fuck the system</span>
+<span>Dried mushrooms for culinary use. Not medical advice.</span>
+</div>
+</footer>
+
+</div>
+</body>
+</html>
